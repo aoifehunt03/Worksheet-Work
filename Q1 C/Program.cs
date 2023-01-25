@@ -1,21 +1,22 @@
-﻿namespace Q1
+﻿namespace Q1_C
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            PrintIntegersFor();
+            PrintIntegersDo();
         }
 
-        static int PrintIntegersFor()
+        static void PrintIntegersDo()
         {
-            int i;
-            for (i = 40; i <= 60; i++)
+            int i = 40;
+
+            do
             {
                 Console.WriteLine(i);
                 i++;
             }
-            return i;
+            while (i <= 60);
         }
     }
 }

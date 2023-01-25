@@ -1,16 +1,16 @@
-﻿namespace Q1
+﻿namespace Q1_D
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            PrintIntegersFor();
+            PrintExcludingFor();
         }
 
-        static int PrintIntegersFor()
+        static int PrintExcludingFor()
         {
             int i;
-            for (i = 40; i <= 60; i++)
+            for (i = 40; i <= 60 && i != 48 && i != 46; i++)
             {
                 Console.WriteLine(i);
                 i++;
