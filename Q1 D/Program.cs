@@ -1,4 +1,11 @@
-﻿namespace Q1_D
+﻿/*
+ * aoife hunt
+ * 26 01 23
+ * 
+ * Write a method, PrintExcludingFor, which uses a  for loop to print all integers between 40 and 60 excluding 46 and 48
+ */
+
+namespace Q1_D
 {
     internal class Program
     {
@@ -7,15 +14,16 @@
             PrintExcludingFor();
         }
 
-        static int PrintExcludingFor()
+        static void PrintExcludingFor()
         {
             int i;
-            for (i = 40; i <= 60 && i != 48 && i != 46; i++)
+            for (i = 40; i <= 60; i++)
             {
-                Console.WriteLine(i);
-                i++;
+                if (i==46 || i==48)
+                    Console.WriteLine();
+                else
+                    Console.WriteLine(i);
             }
-            return i;
         }
     }
 }

@@ -1,4 +1,11 @@
-﻿namespace Q1_C
+﻿/*
+ * aoife hunt
+ * 24 01 23
+ * 
+ * Write a third method, PrintIntegersDo, which does the same thing using a do..while loop
+ */
+
+namespace Q1_C
 {
     internal class Program
     {
