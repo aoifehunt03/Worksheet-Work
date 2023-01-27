@@ -16,7 +16,7 @@ namespace Q1_E
 
         static void PrintDescendingFor()
         {
-            for (int i = 60; i>=40; i--)
+            for (int i=60; i>=40; i--)
             {
                 Console.WriteLine(i);
             }

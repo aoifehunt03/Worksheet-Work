@@ -14,15 +14,14 @@ namespace Q1_B
             PrintIntegersWhile();
         }
 
-        static int PrintIntegersWhile()
+        static void PrintIntegersWhile()
         {
             int i = 40;
-            while (i <= 60 && )
+            while (i <= 60)
             {
                 Console.WriteLine(i);
                 i++;
             }
-            return i;
         }
     }
 }

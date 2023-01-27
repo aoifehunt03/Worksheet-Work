@@ -12,19 +12,32 @@ namespace Q2
 
         static void Main(string[] args)
         {
-            UserInput();
-            //Calc();
+            CountOddNumbers();
         }
 
-        static void UserInput()
+        static void CountOddNumbers()
         {
-            //Console.Write("Enter")
+            int digitCount = 1;
+            int finalOdd;
+            int countOdd = 0;
+
+            while (digitCount <= 5)
+            {
+                Console.Write("insert a number : ");
+                string inputString = Console.ReadLine();
+
+                digitCount++;
+
+                for (int i = 0; i < inputString.Length; i++)
+                {
+                    if ((int.Parse(inputString[i].ToString()) % 2) != 0)
+                    {
+                        countOdd++;
+                        finalOdd = countOdd;
+                    }
+                }
+            }
+            Console.WriteLine("There are " + finalOdd + " odd numbers");
         }
-
-        //static int Calc()
-        //{
-
-        //}
-
     }
 }

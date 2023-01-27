@@ -17,7 +17,6 @@ namespace Q1_C
         static void PrintIntegersDo()
         {
             int i = 40;
-
             do
             {
                 Console.WriteLine(i);

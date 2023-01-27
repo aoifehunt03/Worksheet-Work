@@ -16,8 +16,7 @@ namespace Q1_D
 
         static void PrintExcludingFor()
         {
-            int i;
-            for (i = 40; i <= 60; i++)
+            for (int i = 40; i <= 60; i++)
             {
                 if (i==46 || i==48)
                     Console.WriteLine();
